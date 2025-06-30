@@ -2,7 +2,7 @@
 
 A responsive NFT buying and selling platform built using HTML, CSS, and JavaScript—completely framework-free. Clean, modern, and perfect for showcasing in a front-end portfolio.
 
-🔗 **Live Demo**: [View Project](https://soroushx123.github.io/nft-website/)
+🔗 **Live Demo**: [View Project](https://soroushx123.github.io/Responsive-Website/)
 
 ## ⚙️ Features
 - Sleek and minimal navigation bar
