@@ -241,3 +241,27 @@ h2.separator {
   color: #fff;
   background-color: #000;
 }
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.active .links {
+    display: flex;
+  }
+}
+
