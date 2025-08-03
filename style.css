@@ -243,25 +243,72 @@ h2.separator {
 }
 
 
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
-  nav .links {
-    display: none;
+  nav {
     flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  nav .links,
+  nav .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 
-  .hamburger {
-    display: block;
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
   }
 
-  nav.active .links {
-    display: flex;
+  header .left {
+    width: 100%;
+  }
+
+  header .left h1 {
+    font-size: 40px;
+  }
+
+  header img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .sell-nft,
+  .nft-shop .nft-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nft-shop .category {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nft-shop .category a {
+    margin: 5px;
+  }
+
+  h2.separator {
+    padding: 0 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sell-nft,
+  .nft-shop {
+    padding: 0 20px;
+  }
+
+  .sell-nft .item,
+  .nft-shop .nft-list .item {
+    width: 100%;
   }
 }
-
