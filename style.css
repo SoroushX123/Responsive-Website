@@ -244,30 +244,28 @@ h2.separator {
 }
 
 
-
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  nav {
+  nav,
+  header,
+  .sell-nft,
+  .nft-shop .nft-list {
     flex-direction: column;
     align-items: center;
   }
 
+  header .left,
   .item {
     width: 100%;
-    margin-bottom: 20px;
+    text-align: center;
   }
 
-  header img {
-    width: 80%;
+  header img,
+  .nft-shop .nft-list .item img {
+    width: 90%;
     height: auto;
   }
 
   h1 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 36px;
   }
 }
