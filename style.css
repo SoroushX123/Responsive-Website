@@ -327,9 +327,74 @@ h2.separator {
 
   .nft-shop a span {
     font-size: 14px;
-  
+  }
 
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px; 
+    padding: 16px;
+  }
+
+  header .left a {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;  
+  }
+
+  header .left a i {
+    font-size: 18px;
+  }
+
+  header .left a span {
+    font-size: 14px;
+  }
+
+  header img {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px; 
+    padding: 12px 0;
+  }
+
+  nav .links,
+  nav .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  nav a.logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav .links a {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+
+  nav .login button {
+    font-size: 15px;
+    padding: 6px 14px;
+  }
 }
+
 
 
 
