@@ -1,4 +1,4 @@
-/* ==== Reset & Global Styles ==== */
+/* ==== Global Reset ==== */
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ nav .login .signup {
   width: 100px;
 }
 
-/* ==== Header Section ==== */
+/* ==== Header ==== */
 header {
   padding: 0 80px;
   height: calc(100vh - 80px);
@@ -263,7 +263,7 @@ h2.separator {
   background-color: #000;
 }
 
-/* ==== Mobile Responsive ==== */
+/* ==== Responsive – Mobile Styles ==== */
 @media (max-width: 768px) {
   nav,
   header,
@@ -276,32 +276,43 @@ h2.separator {
   nav {
     padding: 20px 12px;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   }
 
-  nav .links,
-  nav .login {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 8px;
+  nav .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
-  nav .links a,
-  nav .login button {
-    width: 100%;
-    text-align: center;
+  nav .links a {
     font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
   }
 
-  nav a.logo {
-    font-size: 24px;
+  nav .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav .login button {
+    font-size: 15px;
+    padding: 8px 14px;
   }
 
   header {
     height: auto;
-    padding: 20px;
-    gap: 18px;
+    padding: 24px;
+    gap: 20px;
     text-align: center;
   }
 
@@ -312,6 +323,7 @@ h2.separator {
   header .left h1 {
     font-size: 28px;
     line-height: 1.3;
+    margin-bottom: 12px;
   }
 
   header .left h1 span {
@@ -324,6 +336,7 @@ h2.separator {
   header .left p {
     font-size: 16px;
     color: #777;
+    margin-bottom: 20px;
   }
 
   header img {
@@ -362,22 +375,3 @@ h2.separator {
     margin-bottom: 20px;
   }
 
-  .nft-shop .category {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 10px;
-    gap: 12px;
-  }
-
-  .nft-shop .category a {
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
-
-  .nft-shop .category::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nft-shop img {
-    width: 90%;
-    max-width: 300px;
