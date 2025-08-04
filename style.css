@@ -282,5 +282,28 @@ h2.separator {
     font-size: 28px;
     text-align: center;
   }
+ .nft-shop .category {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 14px;
+  padding-bottom: 10px;
 }
+
+.nft-shop .category a {
+  flex: 0 0 auto;
+  background-color: #dfdcde;
+  padding: 8px 14px;
+  font-size: 15px;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.nft-shop .category::-webkit-scrollbar {
+  display: none; 
+}
+
+
+}
+
 
