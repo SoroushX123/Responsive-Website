@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizign: border-box;
+  box-sizing: border-box;
   font-family: "ubuntu", sans-serif;
 }
 
@@ -394,6 +394,7 @@ h2.separator {
     padding: 6px 14px;
   }
 }
+
 
 
 
